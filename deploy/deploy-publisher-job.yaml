@@ -5,6 +5,8 @@ metadata:
 spec:
   template:
     spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux    
       containers:
       - name: rabbitmq-client
         image: jeffhollan/rabbitmq-client:dev
